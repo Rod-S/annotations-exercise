@@ -15,15 +15,16 @@ public class Author extends Person {
     /**
      * @deprecated Use publishedBooks instead
      */
+    @SuppressWarnings({"deprecation", "unchecked"})
     @Deprecated
     public List<String> getBooks() {
         return books;
     }
-
+    @SuppressWarnings({"deprecation", "unchecked"})
     public List<String> publishedBooks() {
         return books;
     }
-
+    @SuppressWarnings({"deprecation", "unchecked"})
     public void addBook(String book) {
         books.add(book);
     }
